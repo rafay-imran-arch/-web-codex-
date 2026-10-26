@@ -1,0 +1,89 @@
+
+
+.lable-blocks {
+    background-color: firebrick;
+    color: white;
+    font-size: 19px;
+    display: inline-block;
+    float: none;
+    margin: 0;
+    border-color: whitesmoke;
+    border: outset;
+    vertical-align: middle;
+
+
+    transition: all 0.3s ease-out;
+}
+
+.lable-blocks:active, .lable-blocks:hover {
+    transform: scale(1.20);
+    background-color: brown;
+    color: whitesmoke;
+    cursor: pointer;    
+}
+
+.blocks {
+    background-color: firebrick;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+    border-color: whitesmoke;
+    border: outset;
+    vertical-align: middle;
+
+
+    transition: all 0.3s ease-out;
+}
+
+.blocks:active, .blocks:hover {
+    transform: scale(1.09);
+    background-color: brown;
+    color: whitesmoke;
+    cursor: pointer;    
+}
+
+.code {
+    background-color: #e8b782;
+
+    width: 70%;
+    margin: 30px auto;
+    padding: 0px 0px 10px 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main {
+    max-width: 750px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: left;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    color: black; 
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    
+    line-height: 1;
+    font-weight: inherit;
+
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    font-family: monospace;
+    line-height: 120%;
+}
+
+.docs-logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24;
+}
