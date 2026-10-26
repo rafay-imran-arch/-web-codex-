@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta character="UTF-8"> 
-    <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>&lt;web: codex;&gt;</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #aaf0df;"">
+<body style="background-color: #AADDFF;">
+
+<!--Navigation Bar-->
+<nav class = "top-navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-brand">&lt;web: codex;&gt;</a>
+        <ul class="nav-links">
+            <li><a href="#html-home">HTML home</a></li>
+            <li><a href="#css-home">CSS home</a></li>
+            <li><a href="#tags-index">Tags Index</a></li>
+            <li><a href="#sandbox">Sandbox</a></li>
+        </ul>
+    </div> 
+    <hr style="color:black;border-bottom:none;border-style: dotted;border-bottom-style:none;">
+    <p class="nav-p">
+        <b>Most Basic Stuff: </b> | <a href="#test-basics">Text Basics</a>
+    </p>
+</nav>
 <div class="main">
-    <div> 
-        <h1 class="docs-logo">&lt;web: <span class="highlight">codex</span>;&gt;</h1>
+    <div id="home"> 
+        <h1 class="docs-logo highlight" >&lt;web:<span class="highlight">codex</span>;&gt;</h1>
     </div>
 
     <p>
@@ -17,7 +34,7 @@
         imitatig the documantation style of Pygame 
     </p>
     
-    <section>
+    <section>  <!--intro plus boiler plate-->
         <h3>QUICK START:</h3>
         <p>Welcome to the documentation of perhaps one of the most easy coding languages out there HTML. <br> HTML is just a structure you build your website on. <br> Here are the first few building blocks for html
         </p>
@@ -28,17 +45,19 @@
         <br>
         <p>These are the basic boilerplate tags of HTML, all of the websites will have these!</p>
 
-        <h3> Whats a boilerplate? </h3>
-        <p> Take a look and see if you can guess the syntax workings of html </p>
+        <h3> What's a boilerplate? </h3>
+        <p> Take a look and see if you can guess how the syntax of HTML works</p>
         <div id="boilerplate" class="code">
 
-<pre><code id="boiler-text" class="code">
+<pre><code id="boiler-text">
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="en"&gt; 
+&lt;!-- The root element; "en" specifies English as the primary language --&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
+    &lt;meta charset="UTF-8"&gt; 
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;HTML 5 Boilerplate&lt;/title&gt;
+    &lt;!-- The title that appears in the browser tab --&gt;
+    &lt;title&gt;HTML 5 Boilerplate&lt;/title&gt; 
 &lt;/head&gt;
 &lt;body&gt;
 &lt;/body&gt;
@@ -49,8 +68,17 @@
         <p> Did you infer something from this short piece of code? </p>
         <p> If you still didn't catch it you can see that these blocks known as html tags follow a pattern. Some of them have a closing/ending tag while some don't <br>
         As you can see <button class="blocks">html</button><button class="blocks">head</button><button class="blocks">title</button><button class="blocks">body</button> All have closing tags,
-        while <button class="blocks">meta</button> and <button class="blocks">link</button> don't have one. </p>
+        while <button class="blocks">meta</button> and <button class="blocks">link</button> don't have one. The blocks without an ending tags are knwon as void elements. You can
+        either write them like <button class="blocks">&lt;meta&gt;</button> or with a trailing slash(/) <button class="blocks">&lt;meta/&gt;</button>. But wait if you look closely 
+        you can also see a tag with text sandwitched in-between the brackets,like this  <button class="blocks">&lt; &ndash; &ndash;This is a text&ndash; &ndash; &gt;</button>. 
+        This is called a comment tag. The browser ignores this tag and all thats written in there! This is used to leave notes for self and other developers 
+        so they can better understand what your code does and how it is structured.</p>
+
          
+    </section>
+
+    <section> <!--text basics-->    
+
     </section>
 </div>
 </body>
