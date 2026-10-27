@@ -21,12 +21,13 @@
     </div> 
     <hr style="color:black;border-bottom:none;border-style: dotted;border-bottom-style:none;">
     <p class="nav-p">
-        <b>Most Basic Stuff: </b> | <a href="#test-basics">Text Basics</a>
+        <b>Most Basic Stuff: </b> | <a href="#text-basics">Text Basics</a> | <a href="#headings">headings</a> | <a href="#paragraphs">Paragraphs</a>
+        | <a href="#format">format</a> | <a href="#ordered-list">Ordered List</a> | <a href="#unordered-list">Unordered List</a>
     </p>
 </nav>
 <div class="main">
-    <div id="home"> 
-        <h1 class="docs-logo highlight" >&lt;web:<span class="highlight">codex</span>;&gt;</h1>
+    <div id="html-home"> 
+        <h1 id="home" class="docs-logo highlight" >&lt;web:<span class="highlight">codex</span>;&gt;</h1>
     </div>
 
     <p>
@@ -47,8 +48,8 @@
 
         <h3> What's a boilerplate? </h3>
         <p> Take a look and see if you can guess how the syntax of HTML works</p>
-        <div id="boilerplate" class="code">
 
+<div id="boilerplate" class="code">
 <pre><code id="boiler-text">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt; 
@@ -63,8 +64,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-
-        </div>
+</div>
         <p> Did you infer something from this short piece of code? </p>
         <p> If you still didn't catch it you can see that these blocks known as html tags follow a pattern. Some of them have a closing/ending tag while some don't <br>
         As you can see <button class="blocks">html</button><button class="blocks">head</button><button class="blocks">title</button><button class="blocks">body</button> All have closing tags,
@@ -73,13 +73,95 @@
         you can also see a tag with text sandwitched in-between the brackets,like this  <button class="blocks">&lt; &ndash; &ndash;This is a text&ndash; &ndash; &gt;</button>. 
         This is called a comment tag. The browser ignores this tag and all thats written in there! This is used to leave notes for self and other developers 
         so they can better understand what your code does and how it is structured.</p>
-
-         
     </section>
 
     <section> <!--text basics-->    
+        <h2 id="text-basics">Text Basics</h2>
+        <p > How can one convey infromation without the use of text? Thought speech....? I meant on the website. They are the core of the webstie 
+            , transforming raw data into readable paragraphs, eye-catching headings, and clean  lists.</p>
+            <h3 id="headings">Headings and Paragrapgh</h3>
+            <p>To make a website visible you need to use a visual hierarchy. HTML handles this with structural text elements.</p>
+                 
+            <h4><button class="blocks">&lt;h1&gt;</button> to  <button class="blocks">&lt;h6&gt;</button> - Headings </h4>
+            <p>Headings are used to define the layout and importance of your content. <button class="blocks">&lt;h1&gt;</button> defines the most
+            important heading (like the main page title), while <button class="blocks">&lt;h6&gt;</button> defines the least important</p>
+            
+<div class="code">
+<pre><code>
+&lt;h1&gt; Heading 1 &lt;/h1&gt;  --->   <h1 style="display: inline; line-height: 30px;">Heading 1</h1>
+&lt;h2&gt; Heading 2 &lt;/h2&gt;  --->   <h2 style="display: inline; line-height: 30px;" >Heading 2</h2>
+&lt;h3&gt; Heading 3 &lt;/h3&gt;  --->   <h3 style="display: inline; line-height: 30px;">Heading 3</h3>
+&lt;h4&gt; Heading 4 &lt;/h4&gt;  --->   <h4 style="display: inline; line-height: 30px;">Heading 4</h4>
+&lt;h5&gt; Heading 5 &lt;/h5&gt;  --->   <h5 style="display: inline; line-height: 30px;">Heading 5</h5>
+&lt;h6&gt; Heading 6 &lt;/h6&gt;  --->   <h6 style="display: inline; line-height: 0px;">Heading 6</h6>
+</code></pre>
+</div>
+            <h4  id="paragraphs"><button class="blocks">&lt;p&gt; &lt;/p&gt;</button> - Paragraphs </h4> 
+            <p>The bread and butter of every web text. Every block of standard body text should be wrapped in a paragraph tag. 
+                Browsers automatically space (margin) before and after each <button class="blocks">&lt;p&gt;</button> element.
+            </p>
+<div class="code">
+<pre><code>
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+<p style="display: inline; line-height: 10px;">This is a paragraph</p></code></pre>
+</div>
+            <h3 id="format">Line breaks and text formatting </h2>
+            <p>Sometimes you don't want a whole new paragraph just a new line or bit of fancy text.</p>
+            <h4><button class="blocks">&lt;br&gt;</button> - Line Break</h4>
+            <p>This is an example of <strong>Voide Element</strong>(No closing tag). It forces the text follwoing it to drop to the next line immediately</p>
+<div id="line-break" class="code">
+<pre><code>
+&lt;p&gt;This is line one.&lt;br&gt;And this is line two on a fresh line.&lt;/p&gt;
+<span class="output"><P>This is line one.<br>And this is line two on a fresh line.</P></span><span></span></code></pre>
+</div>
+        <h3><button class="blocks">&lt;strong&gt;</button> & <button class="blocks">&lt;em&gt;</button> - Formatting</h3>
+        <p>To highlight crucial details, use inline formatting tags:<br>
+            - <button class="blocks">&lt;strong&gt;</button>: Makes text bold, indicating strong presence.<br>
+            - <button class="blocks">&lt;em&gt;</button>: Italicizes text, adding verbal emphasis.
+        </p>
+<div id="strong-em" class="code">
+<pre><code>
+&lt;p&gt;This is an &lt;strong&gt;STRONG AND BOLD&lt;/strong&gt; text.&lt;/p&gt;
+&lt;p&gt;This is an &lt;em&gt;ITALIC&lt;/em&gt; text&lt;/p&gt;
+<p>This is an <strong>STRONG AND BOLD</strong> text<br>This is an <em>ITALIC</em> text</p></code></pre>
+</div>
+    <h3>Lists</h3>
+    <p>When the paragraph is too bulky, break your information down into structured lists</p>
+    <h4 id="unordered-list"><button class="blocks">&lt;ul&gt;</button> - Unordered List</h4>
+    <p>Creates a bullet list. The parent <button class="blocks">&lt;ul&gt;</button> tag wraps around the child 
+    <button class="blocks">&lt;li&gt;</button> tag which displays the list contents.</p>
+
+<div id="unordered-list" class="code">
+<pre><code>
+&lt;p&gt;This is an unordered list:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+<span class="my-span-preview"><p>This is an unordered list:</p><ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul></span>
+</code></pre>
+</div>
+
+    <h4 id="ordered-list"><button class="blocks">&lt;ol&gt;</button> - Ordered List</h4>
+    <p>Creates a bullet list. The parent <button class="blocks">&lt;ol&gt;</button> tag wraps around the child 
+    <button class="blocks">&lt;li&gt;</button> tag which displays the list contents.</p>
+
+<div id="unordered-list" class="code">
+<pre><code>
+&lt;p&gt;This is an ordered list:&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Book 1&lt;/li&gt;
+    &lt;li&gt;Book 2&lt;/li&gt;
+    &lt;li&gt;Book 3&lt;/li&gt;
+&lt;/ol&gt;
+<span class="my-span-preview"><p>This is an unordered list:</p><ol><li>Book 1</li><li>Book 2</li><li>Book 3</li></ol></span>
+</span></code></pre>
+</div>
 
     </section>
+
+
 </div>
 </body>
 
